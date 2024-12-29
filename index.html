@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind css applied -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Mendleson Website</title>
+  </head>
+  <body
+    class="h-fit w-full flex flex-col items-center overflow-x-hidden max-w-full"
+  >
+    <!--* ==================== Navbar ==================== -->
+    <div
+      class="relative flex flex-col lg:flex-row justify-between items-center w-full px-6 sm:px-10 lg:px-20 py-4 lg:py-6 z-10"
+    >
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <img
+          src="./assets/logo.png"
+          alt="Logo"
+          class="ml-[10px] h-12 md:h-16 lg:h-20"
+        />
+      </div>
+
+      <!-- Navigation Links for Desktop -->
+      <div
+        id="desktop-menu"
+        class="hidden lg:flex space-x-6 text-gray-700 font-medium mr-[75px]"
+      >
+        <a href="#aboutUs" class="hover:text-pink-500 transition">About Us</a>
+        <a href="#services" class="hover:text-pink-500 transition">Services</a>
+        <a href="#ourTeam" class="hover:text-pink-500 transition">Team</a>
+        <a href="#ourClients" class="hover:text-pink-500 transition">Clients</a>
+        <a href="#contactUs" class="hover:text-pink-500 transition"
+          >Contact Us</a
+        >
+      </div>
+
+      <!-- Hamburger Icon for Mobile -->
+      <button
+        id="menu-toggle"
+        class="lg:hidden focus:outline-none text-gray-700 mt-2"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+
+      <!-- Mobile Navigation Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden grid space-y-4 text-gray-700 font-medium mt-4 w-full bg-gray-800 text-white rounded-md px-4 py-6 transition"
+      >
+        <a href="#aboutUs" class="hover:text-pink-500 transition">About Us</a>
+        <a href="#services" class="hover:text-pink-500 transition">Services</a>
+        <a href="#ourTeam" class="hover:text-pink-500 transition">Team</a>
+        <a href="#ourClients" class="hover:text-pink-500 transition">Clients</a>
+        <a href="#contactUs" class="hover:text-pink-500 transition"
+          >Contact Us</a
+        >
+      </div>
+
+      <!-- Decorative Images -->
+      <img
+        class="absolute top-0 left-0 -z-50 w-12 sm:w-16 md:w-20 lg:w-24 xl:w-28 transition-all duration-300 ease-in-out"
+        src="./assets/Asset 1.png"
+        alt="Top Left Decoration"
+      />
+      <img
+        class="absolute top-0 right-0 -z-50 w-28 sm:w-36 md:w-48 lg:w-60 xl:w-72 transition-all duration-300 ease-in-out"
+        src="./assets/Asset 2.png"
+        alt="Top Right Decoration"
+      />
+    </div>
+
+    <!--* ==================== Homepage ==================== -->
+    <div
+      id="homePage"
+      class="relative w-full min-h-fit h-[350px] sm:h-[450px] md:h-[550px] lg:h-[650px] xl:h-[750px] max-h-[850px] mb-8"
+    >
+      <!-- Decorative Images -->
+      <img
+        class="absolute -bottom-16 left-0 -z-40 w-[7rem] sm:w-[9rem] md:w-[12rem] lg:w-[15rem] xl:w-[18rem] transition-all duration-300 ease-in-out"
+        src="./assets/Assets 3.png"
+        alt="Decorative Element Left"
+      />
+      <img
+        class="absolute -bottom-16 right-0 -z-50 w-[7rem] sm:w-[9rem] md:w-[12rem] lg:w-[15rem] xl:w-[18rem] transition-all duration-300 ease-in-out"
+        src="./assets/Assets 4.png"
+        alt="Decorative Element Right"
+      />
+      <img
+        class="absolute -bottom-16 left-0 -z-50 hidden md:block"
+        src="./assets/Graphic 1 2.png"
+        alt="Background Graphic"
+      />
+      <img
+        class="absolute -bottom-16 left-8 sm:left-16 md:left-20 lg:left-28 xl:left-36 -z-20 w-[15rem] sm:w-[20rem] md:w-[25rem] lg:w-[30rem] xl:w-[41rem] transition-all duration-300 ease-in-out"
+        src="./assets/Vector Smart Object21 1.png"
+        alt="Vector Graphic"
+      />
+
+      <!-- Content Container -->
+      <div
+        class="flex flex-col justify-between gap-4 items-center px-6 sm:px-12 md:ml-[25%] lg:ml-[35%] xl:ml-[45%] mr-4 transition-all duration-1000 ease-in-out"
+      >
+        <!-- Title -->
+        <div
+          class="text-center md:text-left w-full max-w-[459px] text-xl sm:text-2xl md:text-[40px] lg:text-[56px] lg:leading-[66px] leading-[33px] font-medium lg:-ml-[90px] lg:mt-[90px] sm:ml-[10px] sm:mt-[40px]"
+        >
+          Mendleson Communication and Engagement
+        </div>
+
+        <!-- Subtitle -->
+        <div
+          class="text-center md:text-left w-full max-w-[540px] font-normal text-base sm:text-lg leading-6 sm:leading-7 text-[#2C2C2C]"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada sed
+          ipsum, ut quam volutpat, tortor.
+        </div>
+      </div>
+    </div>
+
+    <!--* ==================== About Us ==================== -->
+    <div
+      id="aboutUs"
+      class="relative w-full flex flex-col lg:flex-row py-6 px-4 sm:py-8 sm:px-12"
+    >
+      <!-- Left Image Section -->
+      <div class="lg:w-1/2 flex items-center justify-center sm:p-8 p-4">
+        <img
+          src="./assets/about us 1.png"
+          alt="About Us"
+          class="w-full max-w-md lg:max-w-full object-contain"
+        />
+      </div>
+
+      <!-- Right Content Section -->
+      <div class="lg:w-1/2 flex flex-col gap-8 mt-6 lg:mt-0">
+        <!-- Title and Description -->
+        <div>
+          <h2
+            class="font-medium text-2xl sm:text-4xl leading-[28px] sm:leading-[56px] bg-[url('assets/Group30.png')] bg-no-repeat bg-left-bottom w-fit"
+          >
+            ABOUT US
+          </h2>
+          <p
+            class="font-normal text-base sm:text-lg leading-6 sm:leading-7 text-[#2C2C2C] mt-4"
+          >
+            We love what we do and are driven by achieving great results for our
+            clients. Our awards and impressive client list are testament to our
+            high-quality approach. We deliver value, creativity, results, and
+            exceptional levels of customer service and professionalism. We
+            specialize in infrastructure development, energy, and natural
+            resources.
+          </p>
+        </div>
+
+        <!-- Features Section -->
+        <div class="flex flex-col sm:flex-row gap-8 sm:gap-16">
+          <!-- Engagement -->
+          <div class="flex flex-col gap-4 items-center sm:items-start">
+            <div class="w-12 h-12">
+              <img
+                src="./assets/Enagagement icon 1.png"
+                alt="Engagement Icon"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="font-medium text-lg sm:text-2xl leading-5 sm:leading-7">
+              Engagement
+            </h3>
+            <p
+              class="font-normal text-sm sm:text-lg leading-5 sm:leading-7 text-[#2C2C2C]"
+            >
+              We are engagement specialists, who have led projects at all levels
+              of the IAP2 spectrum. <span class="text-pink-500">READ MORE</span>
+            </p>
+          </div>
+
+          <!-- Communications -->
+          <div class="flex flex-col gap-4 items-center sm:items-start">
+            <div class="w-12 h-12">
+              <img
+                src="./assets/coomunication icon 1.png"
+                alt="Communication Icon"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="font-medium text-lg sm:text-2xl leading-5 sm:leading-7">
+              Communications
+            </h3>
+            <p
+              class="font-normal text-sm sm:text-lg leading-5 sm:leading-7 text-[#2C2C2C]"
+            >
+              We are award-winning leaders in communications and campaign
+              management. <span class="text-pink-500">READ MORE</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--* ==================== Services ==================== -->
+    <div
+      id="services"
+      class="relative w-full h-fit py-8 flex flex-col items-center gap-16"
+    >
+      <!-- Decorative Images -->
+      <img
+        class="absolute -top-0 sm:-top-4 md:-top-16 left-0 -z-50 w-[10rem] sm:w-[13rem] md:w-[15rem] lg:w-[18rem] xl:w-[20rem] transition-all duration-300 ease-in-out"
+        src="./assets/Asset 5 1.png"
+        alt="Decorative"
+      />
+      <img
+        class="absolute right-0 top-[50rem] sm:top-[46rem] md:top-[25rem] lg:top-[30rem] xl:top-[32rem] -z-50 w-[5rem] sm:w-[7rem] md:w-[9rem] lg:w-[12rem] xl:w-[15rem] transition-all duration-300 ease-in-out"
+        src="./assets/Asset 6 1.png"
+        alt="Decorative"
+      />
+
+      <!-- Title -->
+      <h2
+        class="font-medium text-4xl sm:text-5xl leading-[56.88px] bg-[url('/assets/Group30.png')] bg-no-repeat bg-left-bottom w-fit pb-2"
+      >
+        Services
+      </h2>
+
+      <!-- Service Cards -->
+      <div class="flex flex-col gap-12 w-full px-4">
+        <!-- Single Service Item -->
+        <div
+          class="flex flex-col md:flex-row gap-8 items-center justify-between text-[#2C2C2C]"
+        >
+          <div class="flex flex-col md:w-1/2 gap-3 text-center md:text-right">
+            <h3 class="font-medium text-3xl lg:text-4xl">Engagement</h3>
+            <p class="font-normal text-base leading-6">
+              We love what we do and are driven by achieving great results for
+              our clients. Our awards and impressive client list are testament
+              to our high-quality approach. We deliver value, creativity,
+              results, and exceptional levels of customer service and
+              professionalism. We specialize in infrastructure development,
+              energy, and natural resources.
+            </p>
+          </div>
+          <div class="flex items-center w-full md:w-1/2">
+            <img
+              src="./assets/Engagement vector 1.png"
+              alt="Engagement"
+              class="w-full max-w-sm object-contain"
+            />
+          </div>
+        </div>
+
+        <!-- Communications -->
+        <div
+          class="flex flex-col md:flex-row-reverse gap-8 items-center justify-between text-[#2C2C2C]"
+        >
+          <div class="flex flex-col md:w-1/2 gap-4 text-center md:text-left">
+            <h3 class="font-medium text-3xl lg:text-4xl">Communications</h3>
+            <p class="font-normal text-base leading-6 max-w-[450px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              quam quis egestas orci. Scelerisque eu, vitae sapien, pellentesque
+              et. Sit ac fames facilisis nibh faucibus.
+            </p>
+          </div>
+          <div class="flex items-center w-full md:w-1/2">
+            <img
+              src="./assets/Coominucation vector 1.png"
+              alt="Communications"
+              class="w-full max-w-sm object-contain"
+            />
+          </div>
+        </div>
+
+        <!-- Facilitation -->
+        <div
+          class="flex flex-col md:flex-row gap-8 items-center justify-between text-[#2C2C2C]"
+        >
+          <div class="flex flex-col md:w-1/2 gap-4 text-center md:text-right">
+            <h3 class="font-medium text-3xl lg:text-4xl">Facilitation</h3>
+            <p class="font-normal text-base leading-6">
+              We love what we do and are driven by achieving great results for
+              our clients. Our awards and impressive client list are a testament
+              to our high-quality approach. We deliver value, creativity,
+              results, and exceptional levels of customer service and
+              professionalism.
+            </p>
+          </div>
+          <div class="flex items-center w-full md:w-1/2">
+            <img
+              src="./assets/facilation vector 1.png"
+              alt="Facilitation"
+              class="w-full max-w-sm object-contain"
+            />
+          </div>
+        </div>
+
+        <!-- Consultation -->
+        <div
+          class="flex flex-col md:flex-row-reverse gap-8 items-center justify-between text-[#2C2C2C]"
+        >
+          <div class="flex flex-col md:w-1/2 gap-4 text-center md:text-left">
+            <h3 class="font-medium text-3xl lg:text-4xl">
+              Consultation and Research
+            </h3>
+            <p class="font-normal text-base leading-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              quam quis egestas orci. Scelerisque eu, vitae sapien, pellentesque
+              et. Sit ac fames facilisis nibh faucibus.
+            </p>
+          </div>
+          <div class="flex items-center w-full md:w-1/2">
+            <img
+              src="./assets/Consultation vector 1.png"
+              alt="Consultation"
+              class="w-full max-w-sm object-contain"
+            />
+          </div>
+        </div>
+
+        <!-- Training & Mentoring -->
+        <div
+          class="flex flex-col md:flex-row gap-8 items-center justify-between text-[#2C2C2C]"
+        >
+          <div class="flex flex-col md:w-1/2 gap-4 text-center md:text-right">
+            <h3 class="font-medium text-3xl lg:text-4xl">
+              Training & Mentoring
+            </h3>
+            <p class="font-normal text-base leading-6">
+              We love what we do and are driven by achieving great results for
+              our clients. Our awards and impressive client list are a testament
+              to our high-quality approach. We deliver value, creativity,
+              results, and exceptional levels of customer service and
+              professionalism.
+            </p>
+          </div>
+          <div class="flex items-center w-full md:w-1/2">
+            <img
+              src="./assets/Training and vector 1.png"
+              alt="Training and Mentoring"
+              class="w-full max-w-sm object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--* ==================== Our Team ==================== -->
+    <div
+      id="ourTeam"
+      class="relative w-full min-w-full h-fit py-8 flex flex-col items-center justify-between gap-12 mt-12 md:mt-36 mb-12 md:mb-28"
+    >
+      <!-- Decorative Images -->
+      <img
+        class="absolute -top-16 sm:-top-20 md:-top-28 lg:-top-40 xl:-top-48 left-0 -z-50 w-[7rem] sm:w-[9rem] md:w-[12rem] lg:w-[15rem] xl:w-[18rem] transition-all duration-300 ease-in-out"
+        src="./assets/Asset 5 2.png"
+        alt="Decorative Image"
+      />
+      <img
+        class="absolute -bottom-28 sm:-bottom-44 md:-bottom-60 lg:-bottom-80 xl:-bottom-96 right-0 -z-50 w-[7rem] sm:w-[9rem] md:w-[12rem] lg:w-[15rem] xl:w-[18rem] transition-all duration-300 ease-in-out"
+        src="./assets/Asset 8 2.png"
+        alt="Decorative Image"
+      />
+
+      <!-- Section Title -->
+      <h2
+        class="font-medium text-3xl sm:text-5xl leading-[56.88px] bg-[url('assets/Group30.png')] bg-no-repeat bg-left-bottom w-fit pb-2"
+      >
+        Our Team
+      </h2>
+
+      <!-- Team Members -->
+      <div
+        class="flex flex-wrap items-center justify-center gap-8 sm:gap-16 md:gap-24 lg:gap-32 xl:gap-36"
+      >
+        <!-- Team Member 1 -->
+        <div class="flex flex-col items-center gap-2 sm:gap-4">
+          <img
+            class="w-[7rem] sm:w-[9rem] md:w-[12rem] lg:w-[15rem] xl:w-[18rem] object-cover rounded-full"
+            src="./assets/Person 1 img 1.png"
+            alt="Jessica D'suza"
+          />
+          <h3
+            class="font-normal text-xs sm:text-base md:text-xl leading-[28.44px] text-center"
+          >
+            Jessica D'suza
+          </h3>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="flex flex-col items-center gap-2 sm:gap-4">
+          <img
+            class="w-[7rem] sm:w-[9rem] md:w-[12rem] lg:w-[15rem] xl:w-[18rem] object-cover rounded-full"
+            src="./assets/Person 2 img 1.png"
+            alt="Johny Williams"
+          />
+          <h3
+            class="font-normal text-xs sm:text-base md:text-xl leading-[28.44px] text-center"
+          >
+            Johny Williams
+          </h3>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="flex flex-col items-center gap-2 sm:gap-4">
+          <img
+            class="w-[7rem] sm:w-[9rem] md:w-[12rem] lg:w-[15rem] xl:w-[18rem] object-cover rounded-full"
+            src="./assets/Person 3 img 1.png"
+            alt="Sanya R"
+          />
+          <h3
+            class="font-normal text-xs sm:text-base md:text-xl leading-[28.44px] text-center"
+          >
+            Sanya R
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!--* ==================== Our Projects ==================== -->
+    <div
+      id="ourProject"
+      class="relative w-full h-fit flex flex-col gap-8 items-center mb-28"
+    >
+      <!-- Section Title -->
+      <div
+        class="font-medium text-3xl sm:text-5xl leading-[56px] bg-[url('assets/Group30.png')] bg-no-repeat bg-left-bottom w-fit pb-2"
+      >
+        Our Projects
+      </div>
+
+      <!-- Project Images Layout -->
+      <div
+        class="flex flex-wrap justify-center sm:justify-between gap-8 sm:gap-16"
+      >
+        <!-- First Project Image -->
+        <div class="w-full sm:w-[48%] md:w-[30%] lg:w-[22%] xl:w-[18%]">
+          <img
+            class="w-full h-auto"
+            src="./assets/Our Project_ 1 img 1.png"
+            alt="Project 1"
+          />
+        </div>
+
+        <!-- Second and Third Project Images -->
+        <div
+          class="flex flex-col gap-8 sm:w-[48%] md:w-[30%] lg:w-[22%] xl:w-[18%]"
+        >
+          <div class="w-full">
+            <img
+              class="w-full h-auto"
+              src="./assets/Our Project _ 2 img 1.png"
+              alt="Project 2"
+            />
+          </div>
+          <div class="w-full">
+            <img
+              class="w-full h-auto"
+              src="./assets/Our Project_ 3 img 1.png"
+              alt="Project 3"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--* ==================== Our Clients ==================== -->
+    <div
+      id="ourClients"
+      class="relative flex flex-col items-center gap-4 md:gap-16 px-8 w-full"
+    >
+      <!-- Decorative image -->
+      <img
+        class="absolute -top-36 left-0 -z-50 w-[4rem] sm:w-[5rem] md:w-[6rem] lg:w-[7rem] xl:w-[8rem]"
+        src="./assets/Assets 9 1.png"
+        alt=""
+      />
+
+      <!-- Section Title -->
+      <div
+        class="font-medium text-3xl sm:text-5xl leading-[56px] bg-[url('assets/Group30.png')] bg-no-repeat bg-left-bottom w-fit capitalize pb-2"
+      >
+        Our Clients
+      </div>
+
+      <!-- Client Logos Layout -->
+      <div class="flex flex-wrap items-center justify-center gap-6 md:gap-12">
+        <!-- Client Logo 1 -->
+        <div class="w-[5rem] sm:w-[6rem] md:w-[8rem] lg:w-[10rem] xl:w-[14rem]">
+          <img
+            class="w-full h-auto"
+            src="./assets/Layer 19 (1).png"
+            alt="Client 1"
+          />
+        </div>
+        <!-- Client Logo 2 -->
+        <div class="w-[5rem] sm:w-[6rem] md:w-[8rem] lg:w-[10rem] xl:w-[14rem]">
+          <img
+            class="w-full h-auto"
+            src="./assets/Layer 20.png"
+            alt="Client 2"
+          />
+        </div>
+        <!-- Client Logo 3 -->
+        <div class="w-[5rem] sm:w-[6rem] md:w-[8rem] lg:w-[10rem] xl:w-[14rem]">
+          <img
+            class="w-full h-auto"
+            src="./assets/1280px-Brigitte-Logo.png"
+            alt="Client 3"
+          />
+        </div>
+        <!-- Client Logo 4 -->
+        <div class="w-[5rem] sm:w-[6rem] md:w-[8rem] lg:w-[10rem] xl:w-[14rem]">
+          <img
+            class="w-full h-auto"
+            src="./assets/Layer 22.png"
+            alt="Client 4"
+          />
+        </div>
+        <!-- Client Logo 5 -->
+        <div class="w-[5rem] sm:w-[6rem] md:w-[8rem] lg:w-[10rem] xl:w-[14rem]">
+          <img
+            class="w-full h-auto"
+            src="./assets/BHP_2017_logo.png"
+            alt="Client 5"
+          />
+        </div>
+        <!-- Client Logo 6 -->
+        <div class="w-[5rem] sm:w-[6rem] md:w-[8rem] lg:w-[10rem] xl:w-[14rem]">
+          <img
+            class="w-full h-auto"
+            src="./assets/Layer 21.png"
+            alt="Client 6"
+          />
+        </div>
+        <!-- Client Logo 7 -->
+        <div class="w-[5rem] sm:w-[6rem] md:w-[8rem] lg:w-[10rem] xl:w-[14rem]">
+          <img
+            class="w-full h-auto"
+            src="./assets/Layer 23.png"
+            alt="Client 7"
+          />
+        </div>
+        <!-- Client Logo 8 -->
+        <div class="w-[5rem] sm:w-[6rem] md:w-[8rem] lg:w-[10rem] xl:w-[14rem]">
+          <img
+            class="w-full h-auto"
+            src="./assets/Layer 24.png"
+            alt="Client 8"
+          />
+        </div>
+        <!-- Client Logo 9 -->
+        <div class="w-[5rem] sm:w-[6rem] md:w-[8rem] lg:w-[10rem] xl:w-[14rem]">
+          <img
+            class="w-full h-auto"
+            src="./assets/MelbourneWaterLogo-1024x282.png"
+            alt="Client 9"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--* ==================== Contact Us ==================== -->
+    <div
+      id="contactUs"
+      class="mt-20 w-full flex justify-center px-4 sm:px-8 lg:px-16"
+    >
+      <div
+        class="bg-[#BFDBFF] p-6 sm:p-8 md:p-12 grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-4 w-full max-w-[1260px] min-w-fit min-h-fit text-sm leading-7"
+      >
+        <!-- Social Links Section -->
+        <div class="flex flex-col">
+          <p class="text-base font-bold leading-9">Social</p>
+          <a href="#" class="flex items-center relative hover:text-pink-500">
+            Facebook
+            <img
+              class="absolute -left-5 w-4 h-4 rounded-md"
+              src="./assets/facebook 1.png"
+              alt="Facebook"
+            />
+          </a>
+          <a href="#" class="flex items-center relative hover:text-pink-500">
+            Linkedin
+            <img
+              class="absolute -left-5 w-4 h-4 rounded-md"
+              src="./assets/linkedin 1.png"
+              alt="Linkedin"
+            />
+          </a>
+          <a href="#" class="flex items-center relative hover:text-pink-500">
+            Google +
+            <img
+              class="absolute -left-5 w-4 h-4 rounded-md"
+              src="./assets/Group 20.png"
+              alt="Google Plus"
+            />
+          </a>
+        </div>
+
+        <!-- Explore Section -->
+        <div class="flex flex-col">
+          <p class="text-base font-bold leading-9">Explore</p>
+          <a href="#" class="hover:text-pink-500">Services</a>
+          <a href="#" class="hover:text-pink-500">Team</a>
+          <a href="#" class="hover:text-pink-500">Clients</a>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="flex flex-col">
+          <p class="text-base font-bold leading-9">Contact</p>
+          <a href="#" class="hover:text-pink-500">Lorem Ipsum dummy address</a>
+          <a href="#" class="hover:text-pink-500">Used for display</a>
+          <a href="#" class="hover:text-pink-500">1234567890</a>
+        </div>
+
+        <!-- Email Section -->
+        <div class="flex flex-col">
+          <p class="text-base sm:text-sm font-bold leading-9 text-gray-800">
+            Email
+          </p>
+          <a
+            href="mailto:mendlesoncommunication@email.com"
+            class="text-xs sm:text-sm text-gray-700 hover:text-pink-500 transition duration-200"
+          >
+            mendlesoncommunication@email.com
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coppyrights  -->
+    <div
+      class="h-12 w-full text-[10px] sm:text-sm lg:text-base flex items-center justify-center"
+    >
+      © Copyright 2018 Mendleson Communication Pty Ltd
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
